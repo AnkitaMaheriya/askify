@@ -18,19 +18,19 @@ const Navigation = () => {
         }
       >
         <World />
-        <span>Stack Overflow</span>
+        <span>Askify</span>
       </NavItem>
 
-      {/* <NavItem href="/tags" selected={router.pathname == '/tags'}>
+      <NavItem href="/tags" selected={router.pathname == '/tags'}>
         <span>Tags</span>
-      </NavItem> */}
+      </NavItem>
 
-      {/* <NavItem
+      <NavItem
         href="/users"
         selected={router.pathname.split('/')[1] == 'users'}
       >
         <span>Users</span>
-      </NavItem> */}
+      </NavItem>
     </nav>
   )
 }

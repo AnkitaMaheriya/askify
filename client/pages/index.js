@@ -55,19 +55,18 @@ const HomePage = () => {
     <Layout>
       <Head>
         <title>
-          {router.query.tag ? router.query.tag : 'Questions'} - Clone of
-          Stackoverflow
+          {router.query.tag ? router.query.tag : 'Questions'} - Askify
         </title>
       </Head>
 
       <PageTitle title={router.query.tag ? `Questions tagged [${router.query.tag}]` : 'All Questions'} button borderBottom={false} />
 
-      <ButtonGroup
-        borderBottom
-        buttons={['Votes', 'Views', 'Newest', 'Oldest']}
-        selected={sortType}
-        setSelected={setSortType}
-      />
+        <ButtonGroup
+          borderBottom
+          buttons={['Votes', 'Views', 'Newest', 'Oldest']}
+          selected={sortType}
+          setSelected={setSortType}
+        />
 
       {!questions && (
         <div className="loading">
